@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: stars
+#
+#  id         :integer          not null, primary key
+#  from_id    :integer
+#  reason     :string(1024)
+#  created_at :datetime
+#  updated_at :datetime
+#  star_type  :string(255)      default("standard"), not null
+#
+
 class Star < ActiveRecord::Base
   default_scope :include => [:comments, :seconds], :order => 'id desc'
 

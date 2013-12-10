@@ -11,27 +11,30 @@ GEM
     activeresource (2.3.18)
       activesupport (= 2.3.18)
     activesupport (2.3.18)
-    addressable (2.3.4)
+    addressable (2.3.5)
+    annotate (2.6.0)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     authlogic (2.1.6)
       activesupport
     builder (3.2.0)
-    excon (0.22.1)
-    heroku (2.39.3)
+    excon (0.25.3)
+    heroku (3.1.0)
       heroku-api (~> 0.3.7)
       launchy (>= 0.3.2)
       netrc (~> 0.7.7)
       rest-client (~> 1.6.1)
       rubyzip
-    heroku-api (0.3.11)
-      excon (~> 0.22.1)
+    heroku-api (0.3.15)
+      excon (~> 0.25.1)
     hoptoad_notifier (2.4.11)
       activesupport
       builder
-    launchy (2.3.0)
+    launchy (2.4.2)
       addressable (~> 2.3)
-    mime-types (1.23)
+    mime-types (1.25.1)
     netrc (0.7.7)
-    pg (0.15.1)
+    pg (0.17.0)
     rack (1.1.6)
     rails (2.3.18)
       actionmailer (= 2.3.18)
@@ -40,16 +43,17 @@ GEM
       activeresource (= 2.3.18)
       activesupport (= 2.3.18)
       rake (>= 0.8.3)
-    rake (10.0.4)
+    rake (10.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rubyzip (0.9.9)
+    rubyzip (1.1.0)
     sqlite3-ruby (1.2.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
   authlogic (= 2.1.6)
   heroku
   hoptoad_notifier (= 2.4.11)

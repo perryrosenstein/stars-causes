@@ -13,3 +13,6 @@ end
 group :production do
   gem 'pg'
 end
+
+# Annotate models
+gem 'annotate'

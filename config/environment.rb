@@ -5,9 +5,9 @@ Rails::Initializer.run do |config|
   config.gem 'authlogic'
   config.gem 'hoptoad_notifier'
 
-  config.action_mailer.default_url_options ||= {:host => 'localhost:3000'}
-
+  config.action_mailer.default_url_options ||= {:host => 'http://localhost:3000'}
   config.action_controller.asset_host = "http://#{ENV['APP_HOST']}"
+
 end
 
 ActionView::Helpers::AssetTagHelper.
